@@ -99,7 +99,7 @@ img {
 
 .intro {
   position: relative;
-  
+
   background-color: #11244a;
   background-image: url(images/hotel.jpg);
   background-repeat: no-repeat;
@@ -163,7 +163,7 @@ img {
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 139px;
-  
+
   font-weight: normal;
   font-size: 72px;
   line-height: 84px;
@@ -192,7 +192,7 @@ img {
   max-width: 300px;
   margin: 0 auto;
   padding-bottom: 20px;
-  
+
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
@@ -229,7 +229,7 @@ img {
 .offers__title {
   margin-bottom: 10px;
   margin-left: 0;
-  
+
   font-size: 23px;
   line-height: 31px;
 }
@@ -307,9 +307,10 @@ img {
   width: 370px;
   margin: 0 auto;
   padding-bottom: 21px;
-  
+
   text-align: center;
 }
+
 .button {
   display: inline-block;
 
@@ -366,7 +367,7 @@ img {
 .footer__nav {
   margin-bottom: 42px;
   padding-bottom: 46px;
-  
+
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgba(255, 255, 255, 0.4);
@@ -416,7 +417,7 @@ img {
   height: 100%;
 
   background-color: #ffffff;
-  
+
   transition: 0.2s;
 }
 
@@ -488,7 +489,6 @@ img {
     width: 900px;
     padding-right: 65px;
     padding-bottom: 20px;
-    
     padding-left: 65px;
   }
 
@@ -502,12 +502,17 @@ img {
     padding: 0;
   }
 
-  .intro .container {
+  .intro .container,
+  .subscriptions .container,
+  .footer .container {
     width: 900px;
+    padding-left: 65px;
+    padding-right: 65px;
   }
 
   .intro__title {
     max-width: 700px;
+  
     font-size: 66px;
   }
 
@@ -520,26 +525,13 @@ img {
   .articles__item {
     margin-bottom: 30px;
   }
-  
+
   .articles__item:nth-child(2n) {
     margin-right: 0;
   }
 
   .articles__item:last-child {
-    margin-left: 0;
     margin-right: 0;
-  }
-
-  .subscriptions .container {  
-    width: 900px;
-    padding-left: 65px;
-    padding-right: 65px;
-  }
-
-  .footer .container {
-    width: 900px;
-    padding-left: 65px;
-    padding-right: 65px;
   }
 
   .footer__nav {
@@ -548,5 +540,69 @@ img {
 
   .footer__socials {
     max-width: 700px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .nav {
+    justify-content: space-around;
+  }
+
+  .nav__item {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .intro .container,
+  .subscriptions .container,
+  .footer .container,
+  .reviews {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .intro .container:hover::before {
+    display: none;
+  }
+
+  .intro__title {
+    width: 100%;
+    padding-bottom: 100px;
+  
+    font-size: 7vw;
+    line-height: 50px;
+  }
+
+  .intro__text {
+    width: 100%;
+    max-width: 456px;
+  }
+
+  .articles__item {
+    margin-right: 0;
+  }
+
+  .subscriptions .container {
+    background-image: none;
+  }
+
+  .offers__title {
+    width: 100%;
+  }
+
+  .offers__text {
+    width: 100%;
+    max-width: 370px;
+  }
+
+  .footer__socials {
+    max-width: 100%;
   }
 }
